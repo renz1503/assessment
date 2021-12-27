@@ -1,0 +1,103 @@
+.PresentationCard{
+    min-height: 500px;
+    border-radius: 12px;
+    position: relative;
+    background: #fff;
+    padding: 30px;
+    max-width: 1170px;
+    width: 100%;
+    margin-right: auto;
+    margin-left: auto;
+    top: 70px;
+}
+
+.PresentationCard__Information{
+    position: relative;
+    width: 100%;
+    min-height: 200px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.PresentationCard__Information__Img{
+    vertical-align: middle;
+    border-style: solid;
+    border-radius: 12px;
+    border-color: #000;
+}
+
+.PresentationCard__Information__Text{
+    vertical-align: middle;
+    align-self: center;
+}
+
+.PresentationCard__Information__Text h6{
+    font-size: 14px;
+    text-transform: uppercase;
+    letter-spacing: 2.1px;
+    font-weight: normal;
+    margin-bottom: 12px;
+    margin-top: 0px;
+    color: #222;
+}
+
+.PresentationCard__Information__Text h3{
+    font-size: 48px;
+    text-transform: uppercase;
+    margin-bottom: 15px;
+    color: #222;
+}
+
+.PresentationCard__Information__Text h4{
+    font-size: 16px;
+    font-weight: 500;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+    color: #222;
+}
+
+.PresentationCard__Information__Text p{
+    max-width: 540px;
+    color: #777;
+    margin-bottom: 20px;
+}
+
+.PresentationCard__Information__Text li{
+    margin-bottom: 15px;
+}
+
+.PresentationCard__Information__Text li p{
+    position: relative;
+    padding-left: 40px;
+    font-size: 16px;
+    color: #777;
+    margin: 0;
+}
+
+.PresentationCard__Information__Text__Content_Ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    padding-bottom: 50px;
+}
+
+.PresentationCard__Information__Text__Content_Ul li{
+    display: inline-block;
+}
+
+.PresentationCard__Information__Text__Content_Ul li p a{
+    position: relative;
+    padding-left: 25px;
+    font-size: 16px;
+    color: #777;
+    text-decoration: none;
+}
+
+.PresentationCard__Information__Text__Content_Ul_Icon{
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 20px;
+    color: #000;
+}
