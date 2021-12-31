@@ -1,7 +1,6 @@
 .Navbar {
     background-color: #e8e8e8;
     border: none;
-    width: 100%;
     text-align: center;
     padding-left: 0;
     list-style: none;
@@ -10,9 +9,7 @@
 }
 
 .Navbar__Ul{
-    width: 100%;
     text-align: center;
-    float: left;
     margin: 0;
 }
 
@@ -29,7 +26,7 @@
     padding-bottom: 15px;
     line-height: 20px;
     display: block;
-    color: #777;
+    color: #000;
     text-decoration: none;
 }
 

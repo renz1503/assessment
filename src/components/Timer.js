@@ -26,7 +26,7 @@ export function Timer({updateStyleLinked, idProduct}) {
 
   return (
     <p className='Timer'>
-      {time === 1 ? time + ' segundo.' : time + ' segundos.'}
+      {new Date(time * 1000).toISOString().substr(11, 8)}
     </p>
   );
 }

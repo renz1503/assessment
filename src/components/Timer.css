@@ -1,3 +1,9 @@
 .Timer {
-    color: #551a8b;
+    color: #000;
+    float: left;
+    margin: 0;
+    margin-bottom: 40px;
+    margin-left: 10px;
+    font-weight: bold;
+    font-size: 15px;
 }

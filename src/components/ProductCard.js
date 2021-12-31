@@ -1,10 +1,11 @@
 import axios from 'axios';
+import { useNavigate } from 'react-router-dom';
 import { useEffect, useState } from 'react';
-import { Link } from 'react-router-dom';
 import './ProductCard.css'
 import { Timer } from './Timer.js';
 
 export function ProductCard() {
+    const navigate = useNavigate();
     const [products, setProducts] = useState([]);
     const [loading, setLoading] = useState(false);
     const [error, setError] = useState(false);
@@ -48,19 +49,20 @@ export function ProductCard() {
     if(error) return <p>Something went wrong. Try again later</p>
     
     return (
-      <div className='Products'>
-        {products.map(product => {
-          return (
-            <div className={styleLinked.find(x => x.id === product.id).style} key={product.id}>
-              <Link className='Card__Link' to={`/detalle/${product.id}`} >
-                <img className='Card__Link__Img' src={product.image} alt={product.title}/>
-                <h3 className='Card__Link__Title'>{product.title}</h3>
-                <p className='Card__Link__Id'>Código: {product.id}</p>
-                <Timer updateStyleLinked={updateStyleLinked} idProduct={product.id}/>
-              </Link>
-            </div>
-          )
-        })}
-      </div>
+      <>
+        <h1>Products</h1>
+        <div className='Products'>
+          {products.map(product => {
+            return (
+              <div className={styleLinked.find(x => x.id === product.id).style} key={product.id}>
+                  <img className='Card__Img' src={product.image} alt={product.title}/>
+                  <h3 className='Card__Title'>{product.title}</h3>
+                  <button className='Card__Btn' type="button" onClick={()=>navigate(`/detalle/${product.id}`)}>Go To Detail</button>
+                  <Timer updateStyleLinked={updateStyleLinked} idProduct={product.id}/>
+              </div>
+            )
+          })}
+        </div>
+      </>
     );
 }
